@@ -93,11 +93,6 @@
       }
     ]
   },
-  "news": {
-    "title": "Kulübümüzden Haberler",
-    "intro": "Turnuvalar, başarılar, etkinlikler ve kulübümüzle ilgili güncel gelişmeler.",
-    "items": []
-  },
   "short_name": "Erzincan Veteran",
   "gallery": {
     "title": "Kulübümüzden kareler",
@@ -146,6 +141,20 @@
         "image": "/assets/halter-sampiyonasi.webp",
         "alt": "Halter müsabakasında yarışan sporcu",
         "layout": "normal"
+      }
+    ]
+  },
+  "news": {
+    "title": "Kulübümüzden Haberler",
+    "intro": "Turnuvalar, başarılar, etkinlikler ve kulübümüzle ilgili güncel gelişmeler.",
+    "items": [
+      {
+        "published": true,
+        "category": "Kulüp",
+        "title": "a",
+        "date": "2026-07-24",
+        "summary": "asasasasasa",
+        "body": "sasaddxsaxsxaxsaxsa"
       }
     ]
   },
