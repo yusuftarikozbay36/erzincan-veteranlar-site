@@ -52,7 +52,7 @@
       {
         "name": "Güreş",
         "description": "Teknik antrenmanlar, kondisyon çalışmaları ve müsabaka hazırlıkları.",
-        "featured": true
+        "featured": false
       },
       {
         "name": "Halter",
