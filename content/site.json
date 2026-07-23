@@ -147,16 +147,7 @@
   "news": {
     "title": "Kulübümüzden Haberler",
     "intro": "Turnuvalar, başarılar, etkinlikler ve kulübümüzle ilgili güncel gelişmeler.",
-    "items": [
-      {
-        "published": true,
-        "category": "Kulüp",
-        "title": "a",
-        "date": "2026-07-24",
-        "summary": "asasasasasa",
-        "body": "sasaddxsaxsxaxsaxsa"
-      }
-    ]
+    "items": []
   },
   "hero": {
     "eyebrow": "2023'TEN BERİ • ERZİNCAN",
