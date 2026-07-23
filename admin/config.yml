@@ -1,0 +1,118 @@
+backend:
+  name: git-gateway
+  branch: main
+
+locale: tr
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "site"
+    label: "Web Sitesi"
+    files:
+      - name: "settings"
+        label: "Tüm Site İçeriği"
+        file: "content/site.json"
+        format: "json"
+        fields:
+          - { label: "Site adı", name: "site_name", widget: "string" }
+          - { label: "Kısa site adı", name: "short_name", widget: "string" }
+          - { label: "Kulüp logosu", name: "logo", widget: "image" }
+
+          - label: "Ana giriş bölümü"
+            name: "hero"
+            widget: "object"
+            collapsed: false
+            fields:
+              - { label: "Üst küçük yazı", name: "eyebrow", widget: "string" }
+              - { label: "Ana başlık", name: "title", widget: "string" }
+              - label: "Tanıtım paragrafları"
+                name: "paragraphs"
+                widget: "list"
+                field: { label: "Paragraf", name: "paragraph", widget: "text" }
+              - { label: "Slogan", name: "motto", widget: "string" }
+              - label: "İstatistikler"
+                name: "stats"
+                widget: "list"
+                fields:
+                  - { label: "Büyük değer", name: "value", widget: "string" }
+                  - { label: "Alt açıklama", name: "label", widget: "string" }
+
+          - label: "Hakkımızda"
+            name: "about"
+            widget: "object"
+            fields:
+              - { label: "Başlık", name: "title", widget: "string" }
+              - label: "Paragraflar"
+                name: "paragraphs"
+                widget: "list"
+                field: { label: "Paragraf", name: "paragraph", widget: "text" }
+
+          - label: "Yönetim ve teknik ekip"
+            name: "management"
+            widget: "object"
+            fields:
+              - { label: "Başlık", name: "title", widget: "string" }
+              - { label: "Açıklama", name: "intro", widget: "text" }
+              - label: "Ekip grupları"
+                name: "groups"
+                widget: "list"
+                fields:
+                  - { label: "Grup adı", name: "group", widget: "string" }
+                  - label: "Kişiler"
+                    name: "people"
+                    widget: "list"
+                    fields:
+                      - { label: "Görevi", name: "role", widget: "string" }
+                      - { label: "Adı soyadı", name: "name", widget: "string" }
+
+          - label: "Faaliyetler"
+            name: "activities"
+            widget: "object"
+            fields:
+              - { label: "Başlık", name: "title", widget: "string" }
+              - { label: "Açıklama", name: "intro", widget: "text" }
+              - label: "Branşlar"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Branş adı", name: "name", widget: "string" }
+                  - { label: "Açıklama", name: "description", widget: "text" }
+                  - { label: "Kırmızı kart olarak öne çıkar", name: "featured", widget: "boolean", default: false, required: false }
+
+          - label: "Galeri"
+            name: "gallery"
+            widget: "object"
+            fields:
+              - { label: "Başlık", name: "title", widget: "string" }
+              - label: "Fotoğraflar"
+                name: "images"
+                widget: "list"
+                summary: "{{fields.alt}}"
+                fields:
+                  - { label: "Fotoğraf", name: "image", widget: "image" }
+                  - { label: "Fotoğraf açıklaması", name: "alt", widget: "string" }
+                  - label: "Görünüm"
+                    name: "layout"
+                    widget: "select"
+                    default: "normal"
+                    options:
+                      - { label: "Normal", value: "normal" }
+                      - { label: "Büyük/dikey", value: "large" }
+                      - { label: "Geniş/yatay", value: "wide" }
+
+          - label: "İletişim"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Başlık", name: "title", widget: "string" }
+              - { label: "Açıklama", name: "intro", widget: "text" }
+              - label: "Telefon numaraları"
+                name: "phones"
+                widget: "list"
+                field: { label: "Telefon", name: "phone", widget: "string" }
+              - { label: "Instagram kullanıcı adı", name: "instagram_username", widget: "string" }
+              - { label: "Instagram bağlantısı", name: "instagram_url", widget: "string" }
+              - { label: "Adres", name: "address", widget: "string" }
+              - { label: "Takip kutusu başlığı", name: "card_title", widget: "string" }
+              - { label: "Takip kutusu açıklaması", name: "card_text", widget: "text" }

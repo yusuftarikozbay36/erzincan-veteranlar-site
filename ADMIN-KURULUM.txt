@@ -1,0 +1,40 @@
+ADMİN PANELİ KURULUMU
+
+1) DOSYALARI KONTROL ET
+Bu paket kulüp logosu ve mevcut 9 galeri fotoğrafıyla birlikte hazırlanmıştır.
+Ana klasörde index.html; assets klasöründe logo.webp ve galeri fotoğrafları bulunmalıdır.
+
+
+2) GITHUB'A YÜKLE
+- github.com üzerinde ücretsiz hesap aç/giriş yap.
+- Yeni bir repository oluştur: erzincan-veteranlar-site
+- Bu paketteki bütün dosyaları repository'nin ana dizinine yükle.
+- Branch adı main olmalı.
+
+3) NETLIFY'I GITHUB'A BAĞLA
+- Netlify'da mevcut sitene gir.
+- Site configuration > Build & deploy > Continuous deployment bölümünden GitHub repository'yi bağla.
+- Publish directory: .
+- Build command: boş bırak.
+- Deploy et.
+
+4) NETLIFY IDENTITY'Yİ AÇ
+- Netlify Site configuration > Identity bölümüne gir.
+- Enable Identity düğmesine bas.
+- Registration preferences: Invite only seç.
+
+5) GIT GATEWAY'İ AÇ
+- Identity > Services > Git Gateway bölümüne gir.
+- Enable Git Gateway düğmesine bas.
+
+6) KENDİNİ ADMİN OLARAK DAVET ET
+- Identity > Invite users bölümüne gir.
+- Kendi e-posta adresini yazıp davet gönder.
+- E-postadaki bağlantıya tıklayıp şifre oluştur.
+
+7) PANELE GİR
+https://ALAN-ADIN.com/admin/
+
+Panelde "Web Sitesi > Tüm Site İçeriği" bölümünü aç.
+Fotoğraf veya yazı değiştirip sağ üstten Publish/Yayınla düğmesine bas.
+Netlify birkaç saniye içinde yeni sürümü otomatik yayımlar.

@@ -1,0 +1,78 @@
+{
+  "site_name": "Erzincan Veteranlar Spor Kulübü",
+  "short_name": "Erzincan Veteranlar",
+  "logo": "/assets/logo.webp",
+  "hero": {
+    "eyebrow": "2023'TEN BERİ • ERZİNCAN",
+    "title": "Tecrübe, disiplin ve spor aynı çatı altında.",
+    "paragraphs": [
+      "Erzincan Veteranlar Spor Kulübü; spora gönül vermiş her yaştan insanı aynı çatı altında buluşturan, dostluk, disiplin ve mücadele ruhunu yaşatan güçlü bir spor ailesidir.",
+      "Geçmişin tecrübesini bugünün enerjisiyle birleştiren kulübümüz, sporun birleştirici gücünü gelecek nesillere aktarmayı amaçlamaktadır. Bizim için spor yalnızca kazanmak değil; sağlıklı yaşamak, dayanışmayı güçlendirmek, dostluklar kurmak ve Erzincan’ı en güzel şekilde temsil etmektir.",
+      "Erzincan Veteranlar Spor Kulübü, her karşılaşmada centilmenliği, azmi ve mücadele ruhunu ön planda tutmaktadır."
+    ],
+    "motto": "Tecrübe bizde, mücadele ruhumuzda!",
+    "stats": [
+      { "value": "2023", "label": "Kuruluş" },
+      { "value": "3 Branş", "label": "Aktif Faaliyet" },
+      { "value": "Erzincan", "label": "Şehrimizin Kulübü" }
+    ]
+  },
+  "about": {
+    "title": "Sporla yetişen güçlü nesiller.",
+    "paragraphs": [
+      "Erzincan Veteranlar Spor Kulübü; tecrübeli sporcuları, antrenörleri ve genç yetenekleri ortak bir çatı altında buluşturan bir spor topluluğudur.",
+      "Düzenli antrenmanlar, turnuvalar, madalya mücadeleleri, şehir dışı organizasyonları ve sosyal etkinliklerle sporcuların fiziksel ve kişisel gelişimine katkı sunmayı amaçlarız."
+    ]
+  },
+  "management": {
+    "title": "Kulübümüze yön veren isimler",
+    "intro": "Tecrübe, disiplin ve takım ruhuyla sporcularımızın yanında.",
+    "groups": [
+      {
+        "group": "Kulüp Yönetimi",
+        "people": [
+          { "role": "Kulüp Başkanı", "name": "Bekir Sami ÖZBAY" }
+        ]
+      },
+      {
+        "group": "Teknik Ekip",
+        "people": [
+          { "role": "Antrenör", "name": "Ahmet Zeki ÖZBAY" }
+        ]
+      }
+    ]
+  },
+  "activities": {
+    "title": "Mindere çıkan her sporcu için güçlü bir gelişim ortamı.",
+    "intro": "Kulübümüz güreş, halter ve bilek güreşi branşlarında antrenman ve müsabaka çalışmaları yürütür.",
+    "items": [
+      { "name": "Güreş", "description": "Teknik antrenmanlar, kondisyon çalışmaları ve müsabaka hazırlıkları.", "featured": true },
+      { "name": "Halter", "description": "Kuvvet, teknik, denge ve yarışma performansını geliştirmeye yönelik çalışmalar.", "featured": false },
+      { "name": "Bilek Güreşi", "description": "Teknik, kavrama kuvveti, dayanıklılık ve müsabaka hazırlık antrenmanları.", "featured": false }
+    ]
+  },
+  "gallery": {
+    "title": "Kulübümüzden kareler",
+    "images": [
+      { "image": "/assets/madalya-toreni.webp", "alt": "Madalya töreninde kulüp sporcuları", "layout": "large" },
+      { "image": "/assets/turnuva-takimi.webp", "alt": "Turnuvada genç sporcular", "layout": "normal" },
+      { "image": "/assets/kultur-gezisi.webp", "alt": "Kulüp sporcularının kültür gezisi", "layout": "normal" },
+      { "image": "/assets/antrenman-grubu.webp", "alt": "Güreş salonunda antrenman grubu", "layout": "wide" },
+      { "image": "/assets/gures-antrenmani.webp", "alt": "Güreş antrenmanına katılan sporcular", "layout": "normal" },
+      { "image": "/assets/acik-hava-etkinligi.webp", "alt": "Açık havada madalyalı genç sporcular", "layout": "normal" },
+      { "image": "/assets/altyapi-ekibi.webp", "alt": "Kulübün altyapı sporcuları", "layout": "normal" },
+      { "image": "/assets/organizasyon.webp", "alt": "Kulüp yöneticilerinin katıldığı spor organizasyonu", "layout": "normal" },
+      { "image": "/assets/halter-sampiyonasi.webp", "alt": "Halter müsabakasında yarışan sporcu", "layout": "normal" }
+    ]
+  },
+  "contact": {
+    "title": "Kulübümüzle iletişime geçin.",
+    "intro": "Sporcu kaydı, antrenmanlar, turnuvalar ve diğer konular için bize ulaşabilirsiniz.",
+    "phones": ["0532 270 27 10", "0544 243 61 23"],
+    "instagram_username": "@veteransporkulubu",
+    "instagram_url": "https://www.instagram.com/veteransporkulubu",
+    "address": "Erzincan, Türkiye",
+    "card_title": "Güncel duyurular için bizi takip edin.",
+    "card_text": "Antrenman, turnuva ve kulüp faaliyetlerimizi Instagram hesabımızdan takip edebilirsiniz."
+  }
+}
