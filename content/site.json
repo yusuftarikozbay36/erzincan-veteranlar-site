@@ -67,9 +67,10 @@
   "site_name": "Erzincan Veteran Spor Kulübü",
   "logo": "/assets/logo.webp",
   "about": {
-    "title": "DUYURULAR",
+    "title": "HAKKIMIZDA",
     "paragraphs": [
-      "Henüz bir duyuru bulunmamaktadır"
+      "Erzincan Veteranlar Spor Kulübü, sporun yalnızca fiziksel bir mücadele değil; aynı zamanda dostluk, disiplin, dayanışma ve karakter gelişimi olduğuna inanan güçlü bir spor ailesidir. Farklı yaş gruplarından sporcuları aynı hedef etrafında buluşturan kulübümüz, geçmişin tecrübesini geleceğin enerjisiyle birleştirerek Erzincan sporuna değer katmayı amaçlamaktadır.",
+      "Birçok spor dalında yürüttüğümüz antrenman ve müsabaka faaliyetleriyle sporcularımızın hem fiziksel hem de kişisel gelişimlerini destekliyoruz. Başarı kadar centilmenliği, mücadele kadar takım ruhunu da önemsiyor; sporun birleştirici gücünü yeni nesillere aktarmak için azimle çalışıyoruz."
     ]
   },
   "activities": {
