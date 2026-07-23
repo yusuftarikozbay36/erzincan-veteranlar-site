@@ -45,12 +45,20 @@
         "group": "Teknik Ekip",
         "people": [
           {
-            "role": "Antrenör",
+            "role": "Güreş Antrenörü",
             "name": "Ahmet Zeki ÖZBAY"
           },
           {
-            "role": "Antrenör",
+            "role": "Güreş Antrenörü ",
             "name": "Salih AKARSU"
+          },
+          {
+            "role": "Halter Antrenörü",
+            "name": "Ahmet TAŞTAN"
+          },
+          {
+            "role": "Bilek Güreşi Antrenörü",
+            "name": "Ahmet DERE"
           }
         ]
       }
