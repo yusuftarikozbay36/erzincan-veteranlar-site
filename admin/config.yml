@@ -80,6 +80,25 @@ collections:
                   - { label: "Açıklama", name: "description", widget: "text" }
                   - { label: "Kırmızı kart olarak öne çıkar", name: "featured", widget: "boolean", default: false, required: false }
 
+          - label: "Haberler"
+            name: "news"
+            widget: "object"
+            fields:
+              - { label: "Bölüm başlığı", name: "title", widget: "string" }
+              - { label: "Bölüm açıklaması", name: "intro", widget: "text" }
+              - label: "Haberler"
+                name: "items"
+                widget: "list"
+                summary: "{{fields.title}} — {{fields.date}}"
+                fields:
+                  - { label: "Yayında", name: "published", widget: "boolean", default: true }
+                  - { label: "Haber başlığı", name: "title", widget: "string" }
+                  - { label: "Tarih", name: "date", widget: "datetime", date_format: "DD.MM.YYYY", time_format: false, format: "YYYY-MM-DD" }
+                  - { label: "Kategori", name: "category", widget: "string", default: "Kulüp" }
+                  - { label: "Kapak fotoğrafı", name: "image", widget: "image", required: false }
+                  - { label: "Kısa açıklama", name: "summary", widget: "text" }
+                  - { label: "Haberin tamamı", name: "body", widget: "text", required: false }
+
           - label: "Galeri"
             name: "gallery"
             widget: "object"

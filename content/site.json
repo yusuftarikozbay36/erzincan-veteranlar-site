@@ -49,7 +49,7 @@
             "name": "Ahmet Zeki ÖZBAY"
           },
           {
-            "role": "Güreş Antrenörü ",
+            "role": "Güreş Antrenörü",
             "name": "Salih AKARSU"
           },
           {
@@ -92,6 +92,11 @@
         "featured": false
       }
     ]
+  },
+  "news": {
+    "title": "Kulübümüzden Haberler",
+    "intro": "Turnuvalar, başarılar, etkinlikler ve kulübümüzle ilgili güncel gelişmeler.",
+    "items": []
   },
   "short_name": "Erzincan Veteran",
   "gallery": {

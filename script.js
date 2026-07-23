@@ -4,6 +4,15 @@ const lightbox = document.getElementById("lightbox");
 const lightboxImage = document.getElementById("lightboxImage");
 const lightboxClose = document.querySelector(".lightbox-close");
 const galleryGrid = document.getElementById("galleryGrid");
+const newsGrid = document.getElementById("newsGrid");
+const newsModal = document.getElementById("newsModal");
+const newsModalClose = document.querySelector(".news-modal-close");
+const newsModalImage = document.getElementById("newsModalImage");
+const newsModalCategory = document.getElementById("newsModalCategory");
+const newsModalDate = document.getElementById("newsModalDate");
+const newsModalTitle = document.getElementById("newsModalTitle");
+const newsModalBody = document.getElementById("newsModalBody");
+let activeNewsItems = [];
 
 menuButton?.addEventListener("click", () => {
   const isOpen = mainNav.classList.toggle("open");
@@ -40,7 +49,10 @@ lightbox?.addEventListener("click", (event) => {
   if (event.target === lightbox) closeLightbox();
 });
 document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape") closeLightbox();
+  if (event.key === "Escape") {
+    closeLightbox();
+    closeNewsModal();
+  }
 });
 
 function setText(id, value) {
@@ -151,6 +163,145 @@ function renderGallery(images) {
   });
 }
 
+
+function formatNewsDate(dateValue) {
+  if (!dateValue) return "";
+  const parts = String(dateValue).slice(0, 10).split("-");
+  if (parts.length === 3) {
+    const date = new Date(Number(parts[0]), Number(parts[1]) - 1, Number(parts[2]));
+    if (!Number.isNaN(date.getTime())) {
+      return new Intl.DateTimeFormat("tr-TR", {
+        day: "numeric",
+        month: "long",
+        year: "numeric"
+      }).format(date);
+    }
+  }
+  return String(dateValue);
+}
+
+function appendNewsText(container, text) {
+  container.replaceChildren();
+  String(text || "")
+    .split(/\n\s*\n/)
+    .map((paragraph) => paragraph.trim())
+    .filter(Boolean)
+    .forEach((paragraph) => {
+      const p = document.createElement("p");
+      p.textContent = paragraph;
+      container.appendChild(p);
+    });
+}
+
+function closeNewsModal() {
+  newsModal?.classList.remove("open");
+  newsModal?.setAttribute("aria-hidden", "true");
+  document.body.classList.remove("news-modal-open");
+}
+
+function openNewsModal(newsItem) {
+  if (!newsModal || !newsItem) return;
+  const image = newsItem.image || "";
+  if (newsModalImage) {
+    newsModalImage.hidden = !image;
+    newsModalImage.src = image;
+    newsModalImage.alt = image ? (newsItem.title || "Haber fotoğrafı") : "";
+  }
+  if (newsModalCategory) newsModalCategory.textContent = newsItem.category || "Kulüp";
+  if (newsModalDate) {
+    newsModalDate.textContent = formatNewsDate(newsItem.date);
+    newsModalDate.dateTime = newsItem.date || "";
+  }
+  if (newsModalTitle) newsModalTitle.textContent = newsItem.title || "Haber";
+  if (newsModalBody) appendNewsText(newsModalBody, newsItem.body || newsItem.summary || "");
+  newsModal.classList.add("open");
+  newsModal.setAttribute("aria-hidden", "false");
+  document.body.classList.add("news-modal-open");
+}
+
+function renderNews(newsItems) {
+  if (!newsGrid) return;
+  const publishedItems = Array.isArray(newsItems)
+    ? newsItems
+        .filter((item) => item && item.published !== false)
+        .sort((a, b) => String(b.date || "").localeCompare(String(a.date || "")))
+    : [];
+
+  activeNewsItems = publishedItems;
+  newsGrid.replaceChildren();
+
+  if (!publishedItems.length) {
+    const empty = document.createElement("div");
+    empty.className = "news-empty";
+    empty.textContent = "Henüz haber eklenmedi.";
+    newsGrid.appendChild(empty);
+    return;
+  }
+
+  publishedItems.forEach((item, index) => {
+    const card = document.createElement("article");
+    card.className = "news-card";
+
+    const media = document.createElement("div");
+    media.className = "news-media";
+    if (item.image) {
+      const image = document.createElement("img");
+      image.src = item.image;
+      image.alt = item.title || "Kulüp haberi";
+      image.loading = "lazy";
+      media.appendChild(image);
+    } else {
+      const placeholder = document.createElement("div");
+      placeholder.className = "news-media-placeholder";
+      placeholder.textContent = item.category || "Haber";
+      media.appendChild(placeholder);
+    }
+
+    const content = document.createElement("div");
+    content.className = "news-content";
+
+    const meta = document.createElement("div");
+    meta.className = "news-meta";
+    const category = document.createElement("span");
+    category.textContent = item.category || "Kulüp";
+    const date = document.createElement("time");
+    date.textContent = formatNewsDate(item.date);
+    date.dateTime = item.date || "";
+    meta.append(category, date);
+
+    const title = document.createElement("h3");
+    title.textContent = item.title || "Kulüp haberi";
+    const summary = document.createElement("p");
+    summary.textContent = item.summary || "";
+
+    content.append(meta, title, summary);
+
+    if (item.body) {
+      const button = document.createElement("button");
+      button.className = "news-read-more";
+      button.type = "button";
+      button.dataset.newsIndex = String(index);
+      button.textContent = "Haberi Oku";
+      content.appendChild(button);
+    }
+
+    card.append(media, content);
+    newsGrid.appendChild(card);
+  });
+}
+
+newsGrid?.addEventListener("click", (event) => {
+  const button = event.target.closest(".news-read-more");
+  if (!button) return;
+  const index = Number(button.dataset.newsIndex);
+  if (Number.isInteger(index)) openNewsModal(activeNewsItems[index]);
+});
+
+newsModalClose?.addEventListener("click", closeNewsModal);
+newsModal?.addEventListener("click", (event) => {
+  if (event.target === newsModal) closeNewsModal();
+});
+
 function normalizePhone(phone) {
   return String(phone || "").replace(/[^+\d]/g, "");
 }
@@ -240,6 +391,9 @@ async function loadSiteContent() {
     setText("activitiesIntro", data.activities?.intro);
     renderActivities(data.activities?.items);
 
+    setText("newsTitle", data.news?.title);
+    setText("newsIntro", data.news?.intro);
+    renderNews(data.news?.items);
     setText("galleryTitle", data.gallery?.title);
     renderGallery(data.gallery?.images);
 

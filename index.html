@@ -24,6 +24,7 @@
         <a href="#hakkimizda">Hakkımızda</a>
         <a href="#yonetim">Yönetim</a>
         <a href="#faaliyetler">Faaliyetler</a>
+        <a href="#haberler">Haberler</a>
         <a href="#galeri">Galeri</a>
         <a href="#iletisim" class="nav-cta">İletişim</a>
       </nav>
@@ -116,6 +117,22 @@
       </div>
     </section>
 
+
+    <section class="section news-section" id="haberler">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">KULÜP HABERLERİ</p>
+            <h2 id="newsTitle">Kulübümüzden Haberler</h2>
+          </div>
+          <p id="newsIntro">Turnuvalar, başarılar, etkinlikler ve kulübümüzle ilgili güncel gelişmeler.</p>
+        </div>
+        <div class="news-grid" id="newsGrid">
+          <div class="news-empty">Henüz haber eklenmedi.</div>
+        </div>
+      </div>
+    </section>
+
     <section class="section gallery-section" id="galeri">
       <div class="container">
         <div class="section-heading">
@@ -161,6 +178,22 @@
       </div>
     </section>
   </main>
+
+
+  <div class="news-modal" id="newsModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="newsModalTitle">
+    <div class="news-modal-card">
+      <button class="news-modal-close" type="button" aria-label="Haberi kapat">×</button>
+      <img id="newsModalImage" class="news-modal-image" src="" alt="" hidden>
+      <div class="news-modal-content">
+        <div class="news-modal-meta">
+          <span id="newsModalCategory"></span>
+          <time id="newsModalDate"></time>
+        </div>
+        <h2 id="newsModalTitle"></h2>
+        <div class="news-modal-body" id="newsModalBody"></div>
+      </div>
+    </div>
+  </div>
 
   <div class="lightbox" id="lightbox" aria-hidden="true">
     <button class="lightbox-close" type="button" aria-label="Fotoğrafı kapat">×</button>
