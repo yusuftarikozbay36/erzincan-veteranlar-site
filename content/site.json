@@ -64,7 +64,7 @@
       }
     ]
   },
-  "site_name": "Erzincan Veteranlar Spor Kulübü",
+  "site_name": "Erzincan Veteran Spor Kulübü",
   "logo": "/assets/logo.webp",
   "about": {
     "title": "DUYURULAR",
@@ -93,7 +93,7 @@
       }
     ]
   },
-  "short_name": "Erzincan Veteranlar",
+  "short_name": "Erzincan Veteran",
   "gallery": {
     "title": "Kulübümüzden kareler",
     "images": [
