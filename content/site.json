@@ -148,7 +148,17 @@
   "news": {
     "title": "Kulübümüzden Haberler",
     "intro": "Turnuvalar, başarılar, etkinlikler ve kulübümüzle ilgili güncel gelişmeler.",
-    "items": []
+    "items": [
+      {
+        "published": true,
+        "category": "Kulüp",
+        "image": "/assets/uploads/whatsapp-image-2026-07-24-at-20.45.19.jpeg",
+        "date": "2026-07-24",
+        "title": "Minik sporcularımıza katılım belgeleri verildi",
+        "summary": "Erzincan Veteranlar Spor Kulübü olarak, güreş antrenmanlarımıza katılım sağlayan genç sporcularımıza katılım belgeleri takdim ettik.\n",
+        "body": "Sporcularımızın göstermiş olduğu azmi, disiplini ve düzenli çalışmayı desteklemek amacıyla gerçekleştirilen belge töreninde keyifli ve gurur dolu anlar yaşandı. Geleceğin başarılı sporcularını yetiştirme hedefiyle çalışmalarını sürdüren kulübümüz, çocuklarımızın hem sportif hem de kişisel gelişimlerine katkıda bulunmaya devam edecektir.\n\nKatılım sağlayan tüm sporcularımızı tebrik ediyor; ailelerine ve antrenörlerimize verdikleri emek ve desteklerden dolayı teşekkür ediyoruz.\n\nErzincan Veteranlar Spor Kulübü — Tecrübe bizde, mücadele ruhumuzda!"
+      }
+    ]
   },
   "hero": {
     "eyebrow": "2023'TEN BERİ • ERZİNCAN",
