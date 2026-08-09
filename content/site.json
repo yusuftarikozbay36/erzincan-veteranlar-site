@@ -99,11 +99,6 @@
     "title": "Kulübümüzden kareler",
     "images": [
       {
-        "image": "/assets/madalya-toreni.webp",
-        "alt": "Madalya töreninde kulüp sporcuları",
-        "layout": "large"
-      },
-      {
         "image": "/assets/turnuva-takimi.webp",
         "alt": "Turnuvada genç sporcular",
         "layout": "normal"
