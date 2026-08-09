@@ -150,7 +150,7 @@
     "intro": "Turnuvalar, başarılar, etkinlikler ve kulübümüzle ilgili güncel gelişmeler.",
     "items": [
       {
-        "published": true,
+        "published": false,
         "category": "Kulüp",
         "image": "/assets/uploads/whatsapp-image-2026-07-24-at-20.45.19.jpeg",
         "date": "2026-07-24",
@@ -159,7 +159,7 @@
         "body": "Sporcularımızın göstermiş olduğu azmi, disiplini ve düzenli çalışmayı desteklemek amacıyla gerçekleştirilen belge töreninde keyifli ve gurur dolu anlar yaşandı. Bronz, gümüş, altın ve takdirname belgeleri kulübümüz antrenörleri tarafından minik sporcularımıza takdim edildi.  Geleceğin başarılı sporcularını yetiştirme hedefiyle çalışmalarını sürdüren kulübümüz, çocuklarımızın hem sportif hem de kişisel gelişimlerine katkıda bulunmaya devam edecektir.\n\nKatılım sağlayan tüm sporcularımızı tebrik ediyor; ailelerine ve antrenörlerimize verdikleri emek ve desteklerden dolayı teşekkür ediyoruz.\n\nErzincan Veteranlar Spor Kulübü — Tecrübe bizde, mücadele ruhumuzda!"
       },
       {
-        "published": false,
+        "published": true,
         "category": "Kulüp",
         "image": "/assets/uploads/kırbaç.jpg",
         "date": "2026-08-10",
