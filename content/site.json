@@ -78,7 +78,7 @@
     "intro": "Kulübümüz güreş, halter ve bilek güreşi branşlarında antrenman ve müsabaka çalışmaları yürütür.",
     "items": [
       {
-        "name": "Güreş",
+        "name": "okkaa",
         "description": "Teknik antrenmanlar, kondisyon çalışmaları ve müsabaka hazırlıkları.",
         "featured": false
       },
@@ -150,7 +150,7 @@
     "intro": "Turnuvalar, başarılar, etkinlikler ve kulübümüzle ilgili güncel gelişmeler.",
     "items": [
       {
-        "published": false,
+        "published": true,
         "category": "Kulüp",
         "image": "/assets/uploads/kırbaç.jpg",
         "date": "2026-08-10",
