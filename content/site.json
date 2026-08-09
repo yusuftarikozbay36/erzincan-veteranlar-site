@@ -150,7 +150,7 @@
     "intro": "Turnuvalar, başarılar, etkinlikler ve kulübümüzle ilgili güncel gelişmeler.",
     "items": [
       {
-        "published": true,
+        "published": false,
         "category": "Kulüp",
         "image": "/assets/uploads/kırbaç.jpg",
         "date": "2026-08-10",
